@@ -12,17 +12,22 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-output "project_id" {
-    description = "Created project's project_id."
-    value = google_project.test.project_id
+variable "billing_account" {
+  type        = string
+  description = "The alphanumeric ID of the billing account the project belongs to."
 }
 
-output "random_id" {
-    description = "Generated random ID for resources."
-    value = random_string.unique_id.result
+variable "default_resource_labels" {
+  type        = map(any)
+  description = "A set of key/value label pairs to assign to the project."
 }
 
-output "service_account_email" {
-    description = "Terraform Google Provider SA's email address"
-    value = google_service_account.terraform_google_provider_test.email
+variable "display_prefix" {
+  type        = string
+  description = "String prefix to append to each resource name and displayed name."
+}
+
+variable "parent_folder_id" {
+  type        = string
+  description = "The numeric ID of the folder this project should be created under."
 }

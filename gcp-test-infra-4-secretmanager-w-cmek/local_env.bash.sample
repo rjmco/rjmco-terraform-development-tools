@@ -1,0 +1,21 @@
+# Copyright 2021 Ricardo Cordeiro <ricardo.cordeiro@tux.com.pt>
+# 
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# 
+#     http://www.apache.org/licenses/LICENSE-2.0
+# 
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+export TF_VAR_billing_account="012345-67890A-BCDEF0"
+export TF_VAR_default_resource_labels='{
+  key1 = "value1"
+  key2 = "value2"
+}'
+export TF_VAR_display_prefix="abc"
+export TF_VAR_parent_folder_id="012345678901"

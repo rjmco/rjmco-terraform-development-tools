@@ -18,9 +18,14 @@ terraform {
       source  = "hashicorp/google"
       version = "3.63"
     }
-    name = {
+    random = {
       source  = "hashicorp/random"
       version = "3.1.0"
+    }
+
+    time = {
+      source  = "hashicorp/time"
+      version = "0.7.0"
     }
   }
 }
